@@ -132,3 +132,6 @@ networkmanager
 greetd
 zenity
 boot-animation
+sudo
+xorg-xhost
+hyprpaper

@@ -2,6 +2,6 @@
 vt = 1
 
 [default_session]
-command = "hyprland --i-am-really-stupid"
+command = "hyprland"
 
-user = "root"
+user = "lunitely"
