@@ -1,5 +1,6 @@
 alsa-utils
 amd-ucode
+intel-ucode
 arch-install-scripts
 archinstall
 b43-fwcutter
@@ -39,7 +40,6 @@ grml-zsh-config
 grub
 hdparm
 hyperv
-intel-ucode
 irssi
 iw
 jfsutils
@@ -61,8 +61,6 @@ man-db
 man-pages
 mc
 mdadm
-memtest86+
-memtest86+-efi
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
@@ -124,7 +122,6 @@ wpa_supplicant
 wvdial
 xfsprogs
 xl2tpd
-zsh
 
 hyprland
 plymouth
@@ -136,7 +133,8 @@ greetd
 zenity
 boot-animation
 sudo
-xorg-xhost
 hyprpaper
 fastfetch
 btop
+nwg-displays
+polkit-gnome
