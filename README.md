@@ -2,7 +2,7 @@
 *This is just a quick guide on what is different from the normal Arch Linux installation*
 - [Arch Linux Install Guide](https://wiki.archlinux.org/title/Installation_guide)
 
-
+----
 
 In the Live Environment, NetworkManager is used instead of IWD, so
 - `nmtui`/`nmcli` instead of `iwctl`
