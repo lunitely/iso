@@ -1,0 +1,23 @@
+#!/bin/bash
+KEY=4B758E0A1A2F4146B53E97F6980CD593E882D694
+NAME=lunitely
+
+echo "Executed" >> /var/run/fix-repository.log
+
+gpg --keyserver keyserver.ubuntu.com --recv-keys $KEY >> /var/run/fix-repository.log
+gpg --output /tmp/$NAME.gpg --armor --export $KEY >> /var/run/fix-repository.log
+echo "$KEY:6" > /tmp/$NAME.txt >> /var/run/fix-repository.log
+gpg --import-ownertrust /tmp/$NAME.txt >> /var/run/fix-repository.log
+
+cp /tmp/$NAME.gpg /usr/share/pacman/keyrings/ >> /var/run/fix-repository.log
+
+pacman-key --init >> /var/run/fix-repository.log
+pacman-key --recv-keys $KEY >> /var/run/fix-repository.log
+pacman-key --add /tmp/$NAME.gpg >> /var/run/fix-repository.log
+pacman-key --finger $KEY >> /var/run/fix-repository.log
+pacman-key --lsign-key $KEY >> /var/run/fix-repository.log
+pacman-key --init >> /var/run/fix-repository.log
+pacman-key --populate $NAME >> /var/run/fix-repository.log
+
+rm /tmp/$NAME.gpg >> /var/run/fix-repository.log
+rm /tmp/$NAME.txt >> /var/run/fix-repository.log
