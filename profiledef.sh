@@ -21,5 +21,6 @@ file_permissions=(
   ["/etc/sudoers"]="0:0:750"
   ["/etc/shadow"]="0:0:400"
   ["/root"]="0:0:750"
+  ["/root/.automated_script.sh"]="0:0:755"
   ["/root/.gnupg"]="0:0:700"
 )
