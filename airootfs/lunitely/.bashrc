@@ -3,7 +3,7 @@ clear
 echo "╭───────────────────────────────────────────"
 echo "│"
 echo "│   Keyboard Configuration:"
-echo "│     - nano /lunitely/keyboard.conf"
+echo "│     - nano /keyboard.conf"
 echo "│"
 echo "│   You are currently automatically"
 echo "│   switching to the root user, to"
