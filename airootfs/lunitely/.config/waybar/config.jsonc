@@ -1,0 +1,9 @@
+{
+  "modules-right": [
+      "tray"
+  ],
+  "tray": {
+    "icon-size": 15,
+    "spacing": 5
+  }
+}
